@@ -17,7 +17,7 @@ class StudyCard extends StatelessWidget {
     required this.pdfPath,
   }) : super(key: key);
 
-  final IconData icon;
+  final Widget icon;
   final String title;
   final String pdfPath;
 
@@ -27,11 +27,7 @@ class StudyCard extends StatelessWidget {
       elevation: 3.0,
       margin: const EdgeInsets.all(kDefaultPadding),
       child: ListTile(
-        leading: CircleAvatar(
-          child: Icon(
-            icon,
-          ),
-        ),
+        leading: CircleAvatar(child: icon),
         title: Padding(
           padding: const EdgeInsets.all(kDefaultPadding / 2),
           child: Text(

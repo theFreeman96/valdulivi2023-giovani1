@@ -1,9 +1,7 @@
-import 'package:flutter/services.dart';
-
 import 'package:flutter/material.dart';
-import 'package:valdulivi2023_giovani1/components/study_card.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import '../../notifications/notification_service.dart';
+import '/components/study_card.dart';
 import '/utilities/constants.dart';
 
 class ResBody extends StatefulWidget {
@@ -21,19 +19,34 @@ class _ResBodyState extends State<ResBody> {
       child: Column(
         children: const [
           StudyCard(
-            icon: Icons.person,
+            icon: Icon(Icons.person),
             title: 'Relazione con noi stessi',
             pdfPath: 'lib/assets/docs/Relazione con noi stessi.pdf',
           ),
           StudyCard(
-            icon: Icons.people,
+            icon: Icon(Icons.people),
             title: 'Rapporti con il prossimo',
             pdfPath: 'lib/assets/docs/Rapporti con il prossimo.pdf',
           ),
           StudyCard(
-            icon: Icons.church,
+            icon: Icon(Icons.family_restroom),
+            title: 'Relazione con la famiglia',
+            pdfPath: 'lib/assets/docs/Relazione con la famiglia.pdf',
+          ),
+          StudyCard(
+            icon: Icon(Icons.favorite),
+            title: 'Relazione nella coppia cristiana',
+            pdfPath: 'lib/assets/docs/Relazione nella coppia cristiana.pdf',
+          ),
+          StudyCard(
+            icon: Icon(Icons.church),
             title: 'Relazioni con la Chiesa locale',
             pdfPath: 'lib/assets/docs/Relazioni con la Chiesa locale.pdf',
+          ),
+          StudyCard(
+            icon: FaIcon(FontAwesomeIcons.cross),
+            title: 'Relazione con Dio',
+            pdfPath: 'lib/assets/docs/Relazione con Dio.pdf',
           ),
         ],
       ),
